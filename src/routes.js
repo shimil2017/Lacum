@@ -17,7 +17,14 @@ import ProfileScreen from "./screens/profile/ProfileScreen";
 import SheduleScreen from "./screens/shedule/SheduleScreen";
 import ChatList from "./screens/chat/ChatList";
 import EIcon from "react-native-vector-icons/Ionicons";
+/*
+ headerStyle: config.navigation.tab
+      ? globalStyles.header
+      : globalStyles.headerWithoutShadow,
+    headerTintColor: globalStyleVariables.HEADER_TINT_COLOR,
+    headerBackTitle: null,
 
+    */
 const AuthStackNavigator = StackNavigator({
   Login: {
     screen: LoginScreen,

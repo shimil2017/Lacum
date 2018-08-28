@@ -3,6 +3,7 @@ package com.locumapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
 import com.azendoo.reactnativesnackbar.SnackbarPackage;
 import com.krazylabs.OpenAppSettingsPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -26,6 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNI18nPackage(),
             new SnackbarPackage(),
             new OpenAppSettingsPackage(),
             new VectorIconsPackage()

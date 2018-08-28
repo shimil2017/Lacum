@@ -1,23 +1,23 @@
-import { colors } from 'config';
+import { colors } from "config";
 
 const darkStatusBar = {
   translucent: false,
   backgroundColor: colors.grey,
-  barStyle: 'dark-content',
+  barStyle: "dark-content"
 };
 
 const getLightStatusBar = routeName => ({
   translucent: true,
-  backgroundColor: routeName === 'Login' ? colors.transparent : colors.black,
-  barStyle: 'light-content',
+  backgroundColor: routeName === "Login" ? colors.transparent : colors.black,
+  barStyle: "light-content"
 });
 
 const lightScreens = [
-  'MyProfile',
-  'Profile',
-  'Organization',
-  'Repository',
-  'Login',
+  "MyProfile",
+  "Profile",
+  "Organization",
+  "Repository",
+  "Login"
 ];
 
 export const getStatusBarConfig = routeName =>
